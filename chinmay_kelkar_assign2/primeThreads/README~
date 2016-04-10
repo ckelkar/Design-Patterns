@@ -1,0 +1,166 @@
+CS542 Design Patterns
+Spring 2016
+PROJECT <2> README FILE
+
+Due Date: <Monday, February 29, 2016>
+Submission Date: <Monday, February 29, 2016>
+Grace Period Used This Project: <0> Days
+Grace Period Remaining: <0> Days
+Author(s): <Chinmay Pradeep Kelkar> 
+e-mail(s): <ckelkar1@binghamton.edu> 
+
+
+PURPOSE:
+
+[
+  Application of design principles for a simple multi-threaded application.
+]
+
+PERCENT COMPLETE:
+
+[
+  I believe I have completed 100% of this project.
+]
+
+PARTS THAT ARE NOT COMPLETE:
+
+[
+  NONE
+]
+
+BUGS:
+
+[
+  NONE
+]
+
+FILES:
+
+[
+  Driver.java: main class file 
+  Results.java: contains methods to process and display results
+  StdoutDisplayInterface: interface containing methods to display and process results
+  CreateWorkers.java: creates threads
+  WorkersThread: Contains run() method for thread
+  FileProcessor.java: reads file line by line
+  IsPrime.java: checks whether input number is prime(odd) or not
+  Logger.java: handles logging
+  README: the text file you are presently reading
+]
+
+SAMPLE OUTPUT:
+
+[
+
+Input file contents:1,2,3,4,5
+
+Sample output 1:
+chinmaykelkar@ubuntu:~/Design Patterns/chinmay_kelkar_assign2/primeThreads$ ant -buildfile src/build.xml run -Darg0=input.txt -Darg1=5 -Darg2=0 Buildfile: /home/chinmaykelkar/Design Patterns/chinmay_kelkar_assign2/primeThreads/src/build.xml
+
+run:
+     [java] The sum of all prime numbers is 9
+
+Sample output 2:
+
+chinmaykelkar@ubuntu:~/Design Patterns/chinmay_kelkar_assign2/primeThreads$ ant -buildfile src/build.xml run -Darg0=input.txt -Darg1=5 -Darg2=1
+Buildfile: /home/chinmaykelkar/Design Patterns/chinmay_kelkar_assign2/primeThreads/src/build.xml
+
+run:
+     [java] The contents in the datastructure are:1,3,5
+
+Sample output 3:
+chinmaykelkar@ubuntu:~/Design Patterns/chinmay_kelkar_assign2/primeThreads$ ant -buildfile src/build.xml run -Darg0=input.txt -Darg1=5 -Darg2=2
+Buildfile: /home/chinmaykelkar/Design Patterns/chinmay_kelkar_assign2/primeThreads/src/build.xml
+
+jar:
+
+run:
+     [java] Entry 1 added to datastructure
+     [java] Entry 3 added to datastructure
+     [java] Entry 5 added to datastructure
+
+Sample output 4:
+chinmaykelkar@ubuntu:~/Design Patterns/chinmay_kelkar_assign2/primeThreads$ ant -buildfile src/build.xml run -Darg0=input.txt -Darg1=5 -Darg2=3
+Buildfile: /home/chinmaykelkar/Design Patterns/chinmay_kelkar_assign2/primeThreads/src/build.xml
+
+jar:
+
+run:
+     [java] In run method
+     [java] In run method
+     [java] In run method
+     [java] In run method
+     [java] In run method
+
+Sample output 5:
+chinmaykelkar@ubuntu:~/Design Patterns/chinmay_kelkar_assign2/primeThreads$ ant -buildfile src/build.xml run -Darg0=input.txt -Darg1=5 -Darg2=4
+Buildfile: /home/chinmaykelkar/Design Patterns/chinmay_kelkar_assign2/primeThreads/src/build.xml
+
+jar:
+
+run:
+     [java] In the IsPrime constructor
+     [java] In the FileProcessor constructor
+     [java] In the CreateWorkers constructor
+     [java] In the WorkerThread constructor
+     [java] In the WorkerThread constructor
+     [java] In the WorkerThread constructor
+     [java] In the WorkerThread constructor
+     [java] In the WorkerThread constructor
+
+Sample output 6:
+chinmaykelkar@ubuntu:~/Design Patterns/chinmay_kelkar_assign2/primeThreads$ ant -buildfile src/build.xml run -Darg0=input.txt -Darg1=5 -Darg2=5
+Buildfile: /home/chinmaykelkar/Design Patterns/chinmay_kelkar_assign2/primeThreads/src/build.xml
+
+jar:
+
+run:
+     [java] Invalid arguments
+
+]
+
+TO COMPILE:
+
+[
+  Untar file using command tar -xvf chinmay_kelkar_assign2.tar.gz
+  Follow Path: chinmay_kelkar_assign2/primeThreads
+  Assuming you are in the directory containing this README
+	
+  ## To compile: 
+  ant -buildfile src/build.xml all
+]
+
+TO RUN:
+
+[
+  
+  Assuming you are in the directory containing this README
+  Please run as: ant -buildfile src/build.xml run -Darg0=<inputFileName.txt> -Darg1=<NumberofThreads> -Darg2=<debugValue> 
+
+]
+
+USE OF DATASTRUCTURE:
+Used Arraylist to store data because arraylist adds elements dynamically and when runs out of room, arraylist increases it's size by 50%.
+So it is efficient in terms of space.Space complexity to store elemnts is O(n) where n is number of input threads. Time complexity is O(n).
+
+
+EXTRA CREDIT:
+
+[
+  N/A
+]
+
+
+BIBLIOGRAPHY:
+
+
+[
+  used WWW to clear concept of multithreading
+]
+
+ACKNOWLEDGEMENT:
+
+[
+  N/A
+
+]

@@ -1,0 +1,52 @@
+CS542 Design Patterns
+Spring 2016
+PROJECT1 README FILE
+
+Due Date: Tuesday,February 2, 2016
+Submission Date: Tuesday,February 2, 2016
+Grace Period Used This Project: 0 Days
+Grace Period Remaining: 0 Days
+Author: Chinmay Pradeep Kelkar 
+e-mail: ckelkar1@binghamton.edu
+B-id: B00608680
+
+PURPOSE: To find the most frequently occuring element(s) in the given .wsdl file and calculate it's frequency.
+
+PERCENT COMPLETE: I believe I have completed 100% of this project.
+
+PARTS THAT ARE NOT COMPLETE: None.
+
+BUGS: None.
+
+FILES: 
+1.Driver.java
+2.StringOperations.java
+3.FileProcessor.java
+
+SAMPLE OUTPUT:
+bingsuns2% java Driver amazon.wsdl.xml 
+The most frequently occuring element is ASIN. It appeares 15 times.
+
+TO COMPILE:
+1.Extract the files.
+2.Trace the folder containing all the required files through commmand 'cd'.
+3.Use the command javac *.java to compile all the files.
+
+TO RUN:
+Please run as:java Driver <input file path>
+
+TIME AND SPACE COMPLEXITIES OF DATA STRUCTURES:
+1.Hashmap:It contains elements as keys and their occurances as values. 
+	a)Time Complexity:  All the elements need to be accessed to know the most frequent element(s). So worst case time complexity is O(n) 		where n is size of hashmap.
+	b)Space Complexity: All the elements need to be stored in the hashmap. So hashmap requires n units of space. Space complexity is O(n).
+
+2.Arraylist: It contains most frequent element(s).
+	a)Time Complexity: All the elements which are most frequent are need to be accessed. So worst case time complexity is O(m) where m is 		the size of arraylist.
+	b)Space Complexity: It is possible that all the elements are the most frequent. So worst case,all the elements need to be stored in  		arraylist. Space complexity is O(m).
+	
+
+EXTRA CREDIT: NA
+
+BIBLIOGRAPHY: Used docs.oracle.com to check syntax.
+
+ACKNOWLEDGEMENT: None
